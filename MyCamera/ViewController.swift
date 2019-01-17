@@ -33,17 +33,46 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 //        } else {
 //            print("カメラは使用できません")
 //        }
+//
+//        // カメラかフォトライブラリーどちらから画像を取得するか選択
+//        let alertController = UIAlertController(title: "確認", message: "選択してください", preferredStyle: .actionSheet)
+//
+//        // カメラを起動するための選択肢を定義
+//        let cameraAction = UIAlertAction(title: "カメラ", style: .default, handler: nil)
+//        alertController.addAction(cameraAction)
+//
+//        // フォトライブラリーを起動するための選択肢を定義
+//        let photoLibraryAction = UIAlertAction(title: "フォトライブラリー", style: .default, handler: nil)
+//        alertController.addAction(photoLibraryAction)
         
         // カメラかフォトライブラリーどちらから画像を取得するか選択
         let alertController = UIAlertController(title: "確認", message: "選択してください", preferredStyle: .actionSheet)
         
-        // カメラを起動するための選択肢を定義
-        let cameraAction = UIAlertAction(title: "カメラ", style: .default, handler: nil)
-        alertController.addAction(cameraAction)
+        // カメラが利用可能かチェック
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            // カメラを起動するための選択肢を定義
+            let cameraAction = UIAlertAction(title: "カメラ", style: .default, handler: { (action:UIAlertAction) in
+                // カメラを起動
+                let imagePickerController = UIImagePickerController()
+                imagePickerController.sourceType = .camera
+                imagePickerController.delegate = self
+                self.present(imagePickerController, animated: true, completion: nil)
+            })
+            alertController.addAction(cameraAction)
+        }
         
-        // フォトライブラリーを起動するための選択肢を定義
-        let photoLibraryAction = UIAlertAction(title: "フォトライブラリー", style: .default, handler: nil)
-        alertController.addAction(photoLibraryAction)
+        // フォトライブラリーが利用可能かをチェック
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            // フォトライブラリーを起動するための選択肢を定義
+            let photoLibraryAction = UIAlertAction(title: "フォトライブラリー", style: .default, handler: { (action:UIAlertAction) in
+                // フォトライブラリーを起動
+                let imagePickerController = UIImagePickerController()
+                imagePickerController.sourceType = .photoLibrary
+                imagePickerController.delegate = self
+                self.present(imagePickerController, animated: true, completion: nil)
+            })
+            alertController.addAction(photoLibraryAction)
+        }
         
         // キャンセルの選択肢を定義
         let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
