@@ -15,6 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBOutlet weak var pictureImage: UIImageView!
+    
+    @IBAction func cameraButtonAction(_ sender: Any) {
+    }
+    
+    
+    @IBAction func SNSButtonAction(_ sender: Any) {
+    }
 }
 
