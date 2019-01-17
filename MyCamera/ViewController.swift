@@ -17,6 +17,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
     @IBOutlet weak var pictureImage: UIImageView!
     
+    // カメラを起動するをタップすると実行
     @IBAction func cameraButtonAction(_ sender: Any) {
         // カメラが利用可能かチェック
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -35,6 +36,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     
+    // SNSに投稿するをタップすると実行
     @IBAction func SNSButtonAction(_ sender: Any) {
         // 表示画像をアンラップしてシェア画像を取り出し
         if let shareImage = pictureImage.image {
