@@ -27,7 +27,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hp2-uy-kXw"/>
                                 </constraints>
-                                <state key="normal" title="カメラを起動する"/>
+                                <state key="normal" title="カメラを起動する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19X-lZ-8PM">
                                 <rect key="frame" x="16" y="607" width="343" height="30"/>
@@ -35,7 +37,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="PFB-rN-4Gr"/>
                                 </constraints>
-                                <state key="normal" title="SNSに投稿する"/>
+                                <state key="normal" title="SNSに投稿する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
