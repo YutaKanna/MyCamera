@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BND-ng-gjT">
-                                <rect key="frame" x="16" y="20" width="343" height="497"/>
+                                <rect key="frame" x="16" y="20" width="343" height="557"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmy-Gw-9Ta">
-                                <rect key="frame" x="16" y="547" width="343" height="30"/>
+                                <rect key="frame" x="16" y="607" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hp2-uy-kXw"/>
@@ -34,33 +34,16 @@
                                     <action selector="cameraButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIN-Ht-tkq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19X-lZ-8PM">
-                                <rect key="frame" x="16" y="607" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="PFB-rN-4Gr"/>
-                                </constraints>
-                                <state key="normal" title="SNSに投稿する">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="SNSButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ygi-Qz-uER"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="19X-lZ-8PM" secondAttribute="trailing" constant="16" id="0H8-MT-lmd"/>
                             <constraint firstItem="Mmy-Gw-9Ta" firstAttribute="top" secondItem="BND-ng-gjT" secondAttribute="bottom" constant="37" id="1B0-Ar-lq7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="19X-lZ-8PM" secondAttribute="bottom" constant="30" id="A21-GK-i4V"/>
-                            <constraint firstItem="19X-lZ-8PM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NS5-lK-QPa"/>
-                            <constraint firstItem="19X-lZ-8PM" firstAttribute="top" secondItem="Mmy-Gw-9Ta" secondAttribute="bottom" constant="23" id="S8s-DW-rHv"/>
                             <constraint firstItem="BND-ng-gjT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WcH-ft-V4O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mmy-Gw-9Ta" secondAttribute="bottom" constant="30" id="ZEu-Z3-Xn6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BND-ng-gjT" secondAttribute="trailing" constant="16" id="eGU-RZ-oIY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmy-Gw-9Ta" secondAttribute="trailing" constant="16" id="hfh-GL-UBb"/>
                             <constraint firstItem="Mmy-Gw-9Ta" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lFv-sT-UtA"/>
                             <constraint firstItem="Mmy-Gw-9Ta" firstAttribute="top" secondItem="BND-ng-gjT" secondAttribute="bottom" constant="30" id="n7p-OD-yrB"/>
-                            <constraint firstItem="19X-lZ-8PM" firstAttribute="top" secondItem="Mmy-Gw-9Ta" secondAttribute="bottom" constant="30" id="rgp-mP-Vea"/>
                             <constraint firstItem="BND-ng-gjT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yZp-ac-FbZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
