@@ -108,5 +108,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         // (3)モーダルビューを閉じる
         dismiss(animated: true, completion: nil)
     }
+    
+    // 次の画面遷移するときに渡す画像を格納する場所
+    var captureImage : UIImage?
 }
 
