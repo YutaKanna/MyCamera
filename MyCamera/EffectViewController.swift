@@ -42,5 +42,7 @@ class EffectViewController: UIViewController {
     }
     
     @IBAction func closeButtonAction(_ sender: Any) {
+        // 画面を閉じて前の画面に戻る
+        dismiss(animated: true, completion: nil)
     }
 }
