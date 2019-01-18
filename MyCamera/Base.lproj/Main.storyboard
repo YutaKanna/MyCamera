@@ -63,7 +63,58 @@
                     <view key="view" contentMode="scaleToFill" id="ANZ-aX-OLH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aJ8-2M-d3w">
+                                <rect key="frame" x="16" y="20" width="343" height="419"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46F-f9-cPi">
+                                <rect key="frame" x="16" y="487" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LRF-ok-nXX"/>
+                                </constraints>
+                                <state key="normal" title="エフェクト">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEm-Lc-ZEG">
+                                <rect key="frame" x="16" y="547" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VfQ-JR-yWv"/>
+                                </constraints>
+                                <state key="normal" title="シェア">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-3v-bE1">
+                                <rect key="frame" x="16" y="607" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jY7-iG-rlb"/>
+                                </constraints>
+                                <state key="normal" title="閉じる">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="46F-f9-cPi" firstAttribute="top" secondItem="aJ8-2M-d3w" secondAttribute="bottom" constant="30" id="27C-MF-r0U"/>
+                            <constraint firstItem="g8G-3v-bE1" firstAttribute="leading" secondItem="ptO-6G-m9R" secondAttribute="leading" constant="16" id="Abt-3t-SM8"/>
+                            <constraint firstItem="ptO-6G-m9R" firstAttribute="bottom" secondItem="g8G-3v-bE1" secondAttribute="bottom" constant="30" id="C1d-h3-O7H"/>
+                            <constraint firstItem="46F-f9-cPi" firstAttribute="top" secondItem="aJ8-2M-d3w" secondAttribute="bottom" constant="48" id="Hbj-mt-IGf"/>
+                            <constraint firstItem="aJ8-2M-d3w" firstAttribute="top" secondItem="ptO-6G-m9R" secondAttribute="top" id="Ojf-yP-bsM"/>
+                            <constraint firstItem="ptO-6G-m9R" firstAttribute="trailing" secondItem="g8G-3v-bE1" secondAttribute="trailing" constant="16" id="Xuh-ej-Nn9"/>
+                            <constraint firstItem="g8G-3v-bE1" firstAttribute="top" secondItem="uEm-Lc-ZEG" secondAttribute="bottom" constant="30" id="fHF-Nu-njh"/>
+                            <constraint firstItem="uEm-Lc-ZEG" firstAttribute="leading" secondItem="ptO-6G-m9R" secondAttribute="leading" constant="16" id="ffl-mc-maH"/>
+                            <constraint firstItem="aJ8-2M-d3w" firstAttribute="leading" secondItem="ptO-6G-m9R" secondAttribute="leading" constant="16" id="hBG-av-gFm"/>
+                            <constraint firstItem="uEm-Lc-ZEG" firstAttribute="top" secondItem="46F-f9-cPi" secondAttribute="bottom" constant="30" id="hnM-Ym-bhq"/>
+                            <constraint firstItem="46F-f9-cPi" firstAttribute="leading" secondItem="ptO-6G-m9R" secondAttribute="leading" constant="16" id="iVu-dN-lDQ"/>
+                            <constraint firstItem="ptO-6G-m9R" firstAttribute="trailing" secondItem="uEm-Lc-ZEG" secondAttribute="trailing" constant="16" id="pNI-Is-2Rv"/>
+                            <constraint firstItem="ptO-6G-m9R" firstAttribute="trailing" secondItem="aJ8-2M-d3w" secondAttribute="trailing" constant="16" id="piU-Ow-IuZ"/>
+                            <constraint firstItem="ptO-6G-m9R" firstAttribute="trailing" secondItem="46F-f9-cPi" secondAttribute="trailing" constant="16" id="vNa-kM-byb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ptO-6G-m9R"/>
                     </view>
                 </viewController>
