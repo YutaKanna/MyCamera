@@ -14,6 +14,9 @@ class EffectViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // 画面遷移時に元の画像を表示
+        effectImage.image = originalImage
     }
     
 
