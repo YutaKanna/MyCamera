@@ -76,6 +76,9 @@
                                 <state key="normal" title="エフェクト">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="effectButtonAction:" destination="hNJ-Ry-Iqh" eventType="touchUpInside" id="DTQ-OV-lGx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEm-Lc-ZEG">
                                 <rect key="frame" x="16" y="547" width="343" height="30"/>
@@ -86,6 +89,9 @@
                                 <state key="normal" title="シェア">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="shareButtonAction:" destination="hNJ-Ry-Iqh" eventType="touchUpInside" id="eBo-8H-vQj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-3v-bE1">
                                 <rect key="frame" x="16" y="607" width="343" height="30"/>
@@ -96,6 +102,9 @@
                                 <state key="normal" title="閉じる">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="closeButtonAction:" destination="hNJ-Ry-Iqh" eventType="touchUpInside" id="zrC-2y-00p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,6 +126,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ptO-6G-m9R"/>
                     </view>
+                    <connections>
+                        <outlet property="effectImage" destination="aJ8-2M-d3w" id="ea7-qq-x5N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0zD-hw-y3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

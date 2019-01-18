@@ -26,5 +26,14 @@ class EffectViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBOutlet weak var effectImage: UIImageView!
+ 
+    @IBAction func effectButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func shareButtonAction(_ sender: Any) {
+    }
+    
+    @IBAction func closeButtonAction(_ sender: Any) {
+    }
 }
